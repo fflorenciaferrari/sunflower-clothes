@@ -1,0 +1,160 @@
+footer {
+    height: 75vh;
+    width: 100%;
+    margin-top: 1rem;
+
+    .comunidad {
+        height: 25%;
+        background-color: $bg-tercero;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1rem;
+        // border-radius: 2rem;
+
+        .comunidad-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            border: 2px solid $clr-tercero;
+            border-radius: 1rem;
+            padding: 2rem 6rem;
+            // background-color: $bg-primero;
+            background: linear-gradient(rgba(28, 28, 28, 0.774), rgba(29, 10, 28, 0.774)), url('../../img/comunidad.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &:hover {
+                background: linear-gradient(rgba(29, 10, 28, 0.774), rgba(29, 10, 28, 0.774)), url('../../img/comunidad.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .comunidad-link__hashtag {
+                color: $col-blanco;
+                font-size: $fs-segundo;
+                font-weight: weight(bold);
+                font-style: oblique;
+                font-family: $ff-secondary;
+            }
+
+            .comunidad-link__svg {
+                color: $col-blanco;
+                
+            }
+        }
+
+        .comunidad-p {
+            color: $col-blanco;
+            max-width: 720px;
+        }
+    }
+
+    .foot {
+        height: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: $bg-footer;
+
+        .foot-columnas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            width: 33.3333%;
+
+            .foot-columnas__subtitle {
+                color: $clr-tercero;
+                font-size: $fs-tercero;
+                font-family: $ff-secondary;
+                font-weight: weight(medium);
+            }
+            
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 0.7rem;
+
+                li {
+                    a {
+                        color: $clr-tercero;
+                        font-size: $fs-quinto;
+                        font-family: $ff-secondary;
+                        font-weight: weight(regular);
+
+                        
+                    }
+                }
+            }
+
+        }
+
+        .legales {
+            border-left: 1px solid rgb(205, 205, 205);
+            border-right: 1px solid rgb(205, 205, 205);
+            // padding: 0 15rem;
+
+            ul {
+                li {
+                    a {
+                        &:hover {
+                            color: $bg-segundo;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .ayuda {
+            ul {
+                li {
+                    a {
+                        &:hover {
+                            color: $bg-segundo;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .redes {
+            ul {
+                li {
+                    a {
+                        .foot-svg {
+                            color: $bg-tercero;
+
+                            &:hover {
+                                color: $bg-segundo;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 5%;
+        padding-left: 2rem;
+        background-color: $bg-footer;
+
+        .copyright-text {
+            color: $clr-tercero;
+            font-size: $fs-cuarto;
+            font-family: $ff-secondary;
+            font-style: italic;
+            font-weight: weight(light);
+        }
+    }
+}

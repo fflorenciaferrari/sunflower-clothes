@@ -1,0 +1,13 @@
+// Functions
+@function weight ($weight-name) {
+    @return map-get($font-weight, $weight-name);
+}
+
+@mixin flex-left($direction) {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+}

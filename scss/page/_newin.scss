@@ -1,0 +1,51 @@
+.containerCards {
+    width: 100%;
+    // height: 30rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 1rem;
+
+    .card {
+
+        &:hover {
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+
+        background-color: $bg-primero;
+        .card-info {
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem 0rem;
+
+            .card-info-p {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 1rem;
+
+                .card-text {
+                    color: $clr-tercero;
+                    font-size: $fs-cuarto;
+                    font-family: $ff-secondary;
+                    font-weight: weight(medium);
+                    
+                }
+            }
+
+            .card-icon {
+                display: flex;
+                align-self: center;
+
+                &:hover {
+                    color: $bg-segundo;
+                    transition: all 0.2s ease-in-out;
+                }
+                
+            }
+        }
+    }
+}
